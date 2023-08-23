@@ -23,5 +23,21 @@ namespace MyStudyForLauncher
 
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3FlowLayoutPanel form3 = new Form3FlowLayoutPanel();
+            form3.Show();
+
+            this.Hide();
+        }
+
+        private void btnGetFileIcon_Click(object sender, EventArgs e)
+        {
+            Form4FileIcon form4 = new Form4FileIcon();
+            form4.Show();
+
+            this.Hide();
+        }
     }
 }
