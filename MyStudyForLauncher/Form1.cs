@@ -39,5 +39,13 @@ namespace MyStudyForLauncher
 
             this.Hide();
         }
+
+        private void btnKeyId_Click(object sender, EventArgs e)
+        {
+            Form5KeyboardCheck form5 = new Form5KeyboardCheck();
+            form5.Show();
+
+            this.Hide();
+        }
     }
 }

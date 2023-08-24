@@ -31,6 +31,7 @@
             button1 = new Button();
             button2 = new Button();
             btnGetFileIcon = new Button();
+            btnKeyId = new Button();
             SuspendLayout();
             // 
             // button1
@@ -63,11 +64,23 @@
             btnGetFileIcon.UseVisualStyleBackColor = true;
             btnGetFileIcon.Click += btnGetFileIcon_Click;
             // 
+            // btnKeyId
+            // 
+            btnKeyId.Location = new Point(12, 117);
+            btnKeyId.Name = "btnKeyId";
+            btnKeyId.Size = new Size(194, 29);
+            btnKeyId.TabIndex = 3;
+            btnKeyId.TabStop = false;
+            btnKeyId.Text = "Get keyboard id";
+            btnKeyId.UseVisualStyleBackColor = true;
+            btnKeyId.Click += btnKeyId_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(511, 301);
+            Controls.Add(btnKeyId);
             Controls.Add(btnGetFileIcon);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -82,5 +95,6 @@
         private Button button1;
         private Button button2;
         private Button btnGetFileIcon;
+        private Button btnKeyId;
     }
 }
