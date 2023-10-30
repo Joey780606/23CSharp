@@ -47,5 +47,13 @@ namespace MyStudyForLauncher
 
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form6GetExe form6 = new Form6GetExe();
+            form6.Show();
+
+            this.Hide();
+        }
     }
 }

@@ -32,6 +32,7 @@
             button2 = new Button();
             btnGetFileIcon = new Button();
             btnKeyId = new Button();
+            button3 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -75,11 +76,22 @@
             btnKeyId.UseVisualStyleBackColor = true;
             btnKeyId.Click += btnKeyId_Click;
             // 
+            // button3
+            // 
+            button3.Location = new Point(12, 152);
+            button3.Name = "button3";
+            button3.Size = new Size(194, 29);
+            button3.TabIndex = 4;
+            button3.Text = "Get exe file";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(511, 301);
+            ClientSize = new Size(655, 367);
+            Controls.Add(button3);
             Controls.Add(btnKeyId);
             Controls.Add(btnGetFileIcon);
             Controls.Add(button2);
@@ -96,5 +108,6 @@
         private Button button2;
         private Button btnGetFileIcon;
         private Button btnKeyId;
+        private Button button3;
     }
 }
