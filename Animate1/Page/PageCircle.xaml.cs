@@ -13,21 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Animate1
+namespace Animate1.Page
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// PageCircle.xaml 的互動邏輯
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PageCircle : UserControl
     {
-        public MainWindow()
+        public PageCircle()
         {
             InitializeComponent();
-        }
-
-        private void btnCircle_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
