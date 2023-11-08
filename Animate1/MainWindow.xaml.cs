@@ -20,6 +20,9 @@ namespace Animate1
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Page.PageCircle pageCircle = new Page.PageCircle();
+        private Page.Path path = new Page.Path();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -27,7 +30,12 @@ namespace Animate1
 
         private void btnCircle_Click(object sender, RoutedEventArgs e)
         {
+            this.contentPage.Content = this.pageCircle;
+        }
 
+        private void btnPath_Click(object sender, RoutedEventArgs e)
+        {
+            this.contentPage.Content = this.path;
         }
     }
 }
