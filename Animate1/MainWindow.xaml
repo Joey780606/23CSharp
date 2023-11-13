@@ -18,6 +18,7 @@
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" >
                 <Button x:Name="btnCircle" Width="100" Content="Circle" FontSize="20" Click="btnCircle_Click" BorderBrush="Black" />
                 <Button x:Name="btnPath" Width="100" Content="Path" FontSize="20" Click="btnPath_Click" BorderBrush="Black" />
+                <Button x:Name="btnAnimation" Width="100" Content="Animation" FontSize="20" Click="btnAnimation_Click"  BorderBrush="Black" />
             </StackPanel>
         </Grid>
         <Grid Grid.Row="1">

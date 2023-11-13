@@ -22,6 +22,7 @@ namespace Animate1
     {
         private Page.PageCircle pageCircle = new Page.PageCircle();
         private Page.Path path = new Page.Path();
+        private Page.Animation animation = new Page.Animation();
 
         public MainWindow()
         {
@@ -36,6 +37,11 @@ namespace Animate1
         private void btnPath_Click(object sender, RoutedEventArgs e)
         {
             this.contentPage.Content = this.path;
+        }
+
+        private void btnAnimation_Click(object sender, RoutedEventArgs e)
+        {
+            this.contentPage.Content = this.animation;
         }
     }
 }
