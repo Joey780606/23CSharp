@@ -16,6 +16,7 @@
                 <Button x:Name="btnSpan" Grid.Row="0" Width="100" Content="Span" FontSize="20" Click="btnSpan_Click"  BorderBrush="Black" />
                 <Button x:Name="btnTextSpan" Grid.Row="0" Width="100" Content="TextSpan" FontSize="20" Click="btnTextSpan_Click"  BorderBrush="Black" />
                 <Button x:Name="btnColor" Grid.Row="0" Width="100" Content="Color" FontSize="20" Click="btnColor_Click"  BorderBrush="Black" />
+                <Button x:Name="btnFadeInOut" Grid.Row="0" Width="100" Content="Fade" FontSize="20" Click="btnFadeInOut_Click"  BorderBrush="Black" />
             </StackPanel>
         </Grid>
         <Grid Grid.Row="1">
@@ -31,6 +32,28 @@
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
                     <TextBlock x:Name="tbSpan" Width="100" Height="50" Text="Span" FontSize="20"/>
                 </StackPanel>
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="1">
+                <Rectangle
+                    Name="MyRectangle"
+                    Width="100" 
+                    Height="100"
+                    Fill="Blue">
+                    <Rectangle.Triggers>
+                        <!-- Animates the rectangle's opacity. -->
+                        <EventTrigger RoutedEvent="Rectangle.Loaded">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation
+                                        Storyboard.TargetName="MyRectangle" 
+                                        Storyboard.TargetProperty="Opacity"
+                                        From="1.0" To="0.0" Duration="0:0:1" 
+                                        AutoReverse="True" RepeatBehavior="Forever" />
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Rectangle.Triggers>
+                </Rectangle>
             </Grid>
         </Grid>
     </Grid>

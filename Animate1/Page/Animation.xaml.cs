@@ -15,6 +15,10 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+/*
+ * Author: Joey
+ * Reference 1: https://learn.microsoft.com/zh-tw/dotnet/desktop/wpf/graphics-multimedia/animation-overview?view=netframeworkdesktop-4.8
+ */
 namespace Animate1.Page
 {
     /// <summary>
@@ -117,6 +121,11 @@ namespace Animate1.Page
             };
             tbSpan.Foreground = new SolidColorBrush(Colors.Red);
             //tbSpan.BeginAnimation(TextBlock.ForegroundProperty , FontColorAnimation);
+        }
+
+        private void btnFadeInOut_Click(object sender, RoutedEventArgs e)
+        {
+            //Sameple from: Reference 1
         }
     }
 }
